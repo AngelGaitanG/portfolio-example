@@ -1,1 +1,59 @@
-<p>header works!</p>
+<header>
+    <div class="row">
+        <div class="banner">
+            <img src="https://picsum.photos/50/50" alt="Logo">
+            <h1>Jesus</h1>
+        </div>
+        <ul class="nav">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Sobre Mí</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="contact">
+            <ul class="socials">
+                <li><a href="#">
+                        <img src="https://picsum.photos/25/25" alt="Instagram">
+                    </a></li>
+                <li><a href="#">
+                        <img src="https://picsum.photos/25/25" alt="Twitter">
+                    </a></li>
+                <li><a href="#">
+                        <img src="https://picsum.photos/25/25" alt="Facebook">
+                    </a></li>
+                <li>
+                    <img src="https://picsum.photos/25/25" alt="Linkedin">
+                </li>
+            </ul>
+            <button class="btn-contact">HABLEMOS</button>
+        </div>
+    </div>
+    <div class="column">
+        <div class="menu">
+            <button class="menu-btn" (click)="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <img src="https://picsum.photos/50/50" alt="Logo">
+                <h2>Jesus</h2>
+            </div>
+        </div>
+        <div class="expanded-menu" id="expanded-menu" #expandedMenu>
+            <ul class="menu-items">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Sobre Mí</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul class="socials-ex">
+                <li><a href="#"><img src="https://picsum.photos/25/25" alt="social"></a></li>
+                <li><a href="#"><img src="https://picsum.photos/25/25" alt="social"></a></li>
+                <li><a href="#"><img src="https://picsum.photos/25/25" alt="social"></a></li>
+                <li><a href="#"><img src="https://picsum.photos/25/25" alt="social"></a></li>
+            </ul>
+            <button class="btn-ex">HABLEMOS</button>
+        </div>
+    </div>
+</header>
