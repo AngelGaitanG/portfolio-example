@@ -1,1 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #102542;
+    --primary-color-contrast: #ffffff;
+    --primary-color-contrast-rgb: 255, 255, 255;
+
+    --secondary-color: #cdd7d6;
+    --secondary-color-contrast: #333333;
+    --secondary-color-contrast-rgb: 16, 37, 66;
+
+    --tertiary-color: #f8f7ff;
+    --tertiary-color-contrast: #000000;
+    --tertiary-color-contrast-rgb: 0, 0, 0;
+
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1200px;
+    min-width: 320px;
+    font-family: "Open Sans", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+img {
+    font-size: 100%;
+    font-weight: normal;
+    font-style: normal;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+
+
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+[type="search"] {
+    outline-offset: -2px;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+::-moz-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+:-ms-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+::-ms-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+::placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+[hidden] {
+    display: none;
+}
