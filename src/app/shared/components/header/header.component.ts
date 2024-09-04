@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,10 +10,12 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 export class HeaderComponent {
 
   @ViewChild('expandedMenu') expandedMenu!: ElementRef;
+  @ViewChild('menuBtn') menuBtn!: ElementRef;
 
   openMenu() {
     if (this.expandedMenu) {
       this.expandedMenu.nativeElement.classList.toggle('expanded');
+      this.menuBtn.nativeElement.classList.toggle('collapsed');
     }
   }
   

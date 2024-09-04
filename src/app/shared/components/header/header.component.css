@@ -25,6 +25,24 @@ header {
 
 }
 
+.row .banner .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row .banner .logo img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+
+
+}
+
 .row .banner h1 {
     color: var(--primary-color-contrast);
     margin-left: 10px;
@@ -40,6 +58,7 @@ header {
 }
 
 .row .nav li a {
+    font-size: 14px;
     color: var(--primary-color-contrast);
     font-weight: 500;
 }
@@ -55,7 +74,13 @@ header {
     display: flex;
     align-items: center;
     gap: 0 10px;
+    padding-top: 5px;
+}
 
+.row .contact .socials li a img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
 }
 
 .row .contact .btn-contact {
@@ -66,6 +91,14 @@ header {
     font-weight: 500;
     cursor: pointer;
     background-color: transparent;
+    transition: .5s ease;
+}
+
+.row .contact .btn-contact:hover {
+    background-color: var(--primary-color-contrast);
+    opacity: 0.8;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 4);
 }
 
 .column {
@@ -98,6 +131,21 @@ header {
     justify-content: center;
     cursor: pointer;
     margin-right: 40%;
+    transition: .5s ease;
+}
+
+.column .menu .menu-btn:hover {
+    background-color: var(--primary-color-contrast);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 4);
+
+}
+
+.column .menu .menu-btn:hover span {
+    background-color: var(--primary-color);
+}
+
+.column .menu .menu-btn.collapsed {
+    transform: rotate(90deg);
 }
 
 .column .menu .menu-btn span {
@@ -106,6 +154,22 @@ header {
     height: 4px;
     background-color: var(--primary-color-contrast);
     border-radius: 5px;
+}
+
+.column .menu .logo .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column .menu .logo .img img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
 }
 
 .column .menu .logo {
@@ -153,12 +217,19 @@ header {
 .column .expanded-menu .menu-items li a {
     color: var(--primary-color-contrast);
     font-weight: 500;
+    font-size: 14px;
 }
 
 .column .expanded-menu .socials-ex {
     display: flex;
     align-items: center;
     gap: 0 10px;
+}
+
+.column .expanded-menu .socials-ex li a img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
 }
 
 .column .expanded-menu .btn-ex {
@@ -169,6 +240,14 @@ header {
     font-weight: 500;
     cursor: pointer;
     background-color: transparent;
+    transition: .3s ease;
+}
+
+.column .expanded-menu .btn-ex:hover {
+    background-color: var(--primary-color-contrast);
+    opacity: 0.8;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 4);
 }
 
 @media screen and (max-width: 900px) {
