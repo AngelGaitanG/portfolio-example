@@ -1,0 +1,134 @@
+footer {
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 4);
+}
+
+.btn-arrow {
+    transition: .3s ease;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-arrow:hover {
+    opacity: 0.8;
+    transform: translateY(-10px);
+}
+
+.btn-arrow img {
+    width: 40px;
+    filter: invert(100%);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.row .banner {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.row .banner span {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.row .banner .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row .banner .logo img {
+    width: 85px;
+    object-fit: contain;
+}
+
+.row .nav {
+    display: flex;
+    gap: 0 10px;
+
+    padding-bottom: 5px;
+}
+
+.row .nav li a {
+    color: var(--primary-color-contrast);
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.contact {
+    padding-top: 3px;
+}
+
+.contact .socials {
+    display: flex;
+    gap: 0 10px;
+}
+
+.contact .socials li a img {
+    width: 25px;
+    filter: invert(100%);
+}
+
+.rights {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 5px;
+
+}
+
+.rights a {
+    color: var(--primary-color-contrast);
+}
+
+.rights a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 980px) {
+
+    footer {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .banner {
+        margin-top: 10px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .row .nav {
+        margin: 10px 0;
+    }
+
+    .row .rights {
+        margin: 10px 0;
+    }
+
+}
