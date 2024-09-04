@@ -20,6 +20,24 @@
 
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+    z-index: 100;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-contrast);
+    border-radius: 4px;
+}
+
+
+
 html {
     width: 100%;
 }
@@ -28,9 +46,10 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1200px;
+
     min-width: 320px;
     font-family: "Open Sans", sans-serif;
+    background-color: var(--primary-color);
 }
 
 *,
