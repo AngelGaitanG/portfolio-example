@@ -1,0 +1,133 @@
+:host {
+    display: flex;
+
+    min-height: calc(100vh - 70px);
+
+    justify-content: center;
+}
+
+section {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+
+}
+
+section .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+}
+
+section .presentation h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--primary-color-contrast);
+    margin-bottom: 30px;
+}
+
+section .presentation span {
+    color: var(--primary-color-light);
+}
+
+
+section .presentation p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color-contrast);
+    margin-bottom: 30px;
+}
+
+section .presentation .btn-portfolio {
+
+    background-color: var(--primary-color-contrast);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: .3s ease;
+}
+
+section .presentation .btn-portfolio:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color-contrast);
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+section .image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .image img {
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 900px) {
+    section {
+        flex-direction: column;
+    }
+
+    section .presentation {
+        margin-top: 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+    section .presentation .btn-portfolio {
+        margin-bottom: 30px;
+    }
+
+    section .image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    :host {
+        display: block;
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section .presentation h1 {
+        font-size: 40px;
+        display: block;
+    }
+
+    section .presentation p {
+        font-size: 14px;
+        display: block;
+
+    }
+
+    section .image {
+        box-sizing: border-box;
+    }
+
+    section .image img {
+
+        height: 300px;
+        max-width: 300px;
+    }
+}

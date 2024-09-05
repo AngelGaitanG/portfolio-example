@@ -2,6 +2,10 @@
     background-color: var(--primary-color);
 }
 
+.header-space {
+    height: 70px;
+}
+
 router-outlet {
     display: block;
     min-height: 100vh;

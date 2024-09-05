@@ -1,5 +1,7 @@
 :host {
     display: block;
+    position: fixed;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 }
 
@@ -169,8 +171,8 @@ header {
 }
 
 .column .menu .logo .img img {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
 }
 
