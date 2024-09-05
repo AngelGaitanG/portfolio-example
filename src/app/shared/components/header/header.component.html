@@ -7,10 +7,14 @@
             <h1>Jesus</h1>
         </div>
         <ul class="nav">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Sobre Mí</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a (click)="scrollToSection('home')" [ngClass]="{'active': activeSection === 'app-home'}">Inicio</a>
+            </li>
+            <li><a (click)="scrollToSection('about')" [ngClass]="{'active': activeSection === 'app-about'}">Sobre Mí</a>
+            </li>
+            <li><a (click)="scrollToSection('portfolio')"
+                    [ngClass]="{'active': activeSection === 'app-portfolio'}">Portfolio</a></li>
+            <li><a (click)="scrollToSection('contact')"
+                    [ngClass]="{'active': activeSection === 'app-contact'}">Contacto</a></li>
         </ul>
         <div class="contact">
             <ul class="socials">
@@ -38,10 +42,14 @@
         </div>
         <div class="expanded-menu" id="expanded-menu" #expandedMenu>
             <ul class="menu-items">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Sobre Mí</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a (click)="scrollToSection('home')" [ngClass]="{'active': activeSection === 'app-home'}">Inicio</a>
+                </li>
+                <li><a (click)="scrollToSection('about')" [ngClass]="{'active': activeSection === 'app-about'}">Sobre
+                        Mí</a></li>
+                <li><a (click)="scrollToSection('portfolio')"
+                        [ngClass]="{'active': activeSection === 'app-portfolio'}">Portfolio</a></li>
+                <li><a (click)="scrollToSection('contact')"
+                        [ngClass]="{'active': activeSection === 'app-contact'}">Contacto</a></li>
             </ul>
             <ul class="socials-ex">
                 <li><a href="#"><img src="../../../../assets/icons/instagram.svg" alt="instagram"></a></li>

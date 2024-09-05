@@ -61,10 +61,49 @@ header {
     gap: 0 40px;
 }
 
+.row .nav li {
+    position: relative;
+}
+
 .row .nav li a {
-    font-size: 14px;
     color: var(--primary-color-contrast);
     font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.row .nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    transition: width 0.4s ease, left 0.4s ease;
+    transform: translateX(-50% -50%);
+}
+
+.row .nav li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.row .nav li a:hover {
+    color: var(--primary-color-contrast);
+}
+
+.row .nav li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+.row .nav li a.active {
+    color: var(--primary-color-contrast);
 }
 
 .row .contact {
@@ -218,11 +257,54 @@ header {
 
 }
 
+.column .expanded-menu .menu-items li {
+    position: relative;
+}
+
 .column .expanded-menu .menu-items li a {
     color: var(--primary-color-contrast);
     font-weight: 500;
     font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
 }
+
+.column .expanded-menu .menu-items li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--primary-color-contrast);
+    transition: width 0.4s ease, left 0.4s ease;
+    transform: translateX(-50% -50%);
+}
+
+.column .expanded-menu .menu-items li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.column .expanded-menu .menu-items li a:hover {
+    color: var(--primary-color-contrast);
+}
+
+.column .expanded-menu .menu-items li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+.column .expanded-menu .menu-items li a.active {
+    color: var(--primary-color-contrast);
+}
+
+
 
 .column .expanded-menu .socials-ex {
     display: flex;
