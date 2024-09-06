@@ -80,12 +80,13 @@
 
     .presentation {
         margin-bottom: 30px;
+        margin-right: 0;
     }
 }
 
 @media screen and (max-width: 500px) {
     .home {
-        padding: 20px;
+        padding: 0;
     }
 
     .presentation h1 {

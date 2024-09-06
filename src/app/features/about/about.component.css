@@ -40,9 +40,7 @@ section .content .secondary-photo img {
     object-fit: cover;
 }
 
-section .content .about {
-    /* width: 60%; */
-}
+
 
 section .content .about .motto p {
     font-size: 25px;
@@ -109,4 +107,60 @@ section .content .about .dash-btns .cv-btn:hover {
     background-color: var(--primary-color-light);
     color: var(--primary-color-contrast);
     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+@media screen and (max-width: 900px) {
+
+    section {
+        margin: 30px 0;
+        padding: 0;
+    }
+
+    section .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px 0;
+    }
+
+    section .content .secondary-photo {
+        margin-right: 0;
+    }
+
+    section .content .about {
+        width: 90%;
+
+    }
+
+    section .content .about .motto p {
+        font-size: 20px;
+    }
+
+    section .content .about .description p {
+        font-size: 14px;
+    }
+
+    section .content .about .dashboard .card p {
+        font-size: 30px;
+    }
+
+    section .content .about .dashboard .card span {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    section .content .about .dash-btns {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    section .content .secondary-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
 }
