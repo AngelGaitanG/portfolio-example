@@ -11,6 +11,8 @@
             </li>
             <li><a (click)="scrollToSection('about')" [ngClass]="{'active': activeSection === 'app-about'}">Sobre Mí</a>
             </li>
+            <li><a (click)="scrollToSection('services')"
+                    [ngClass]="{'active': activeSection === 'app-services'}">Servicios</a></li>
             <li><a (click)="scrollToSection('portfolio')"
                     [ngClass]="{'active': activeSection === 'app-portfolio'}">Portfolio</a></li>
             <li><a (click)="scrollToSection('contact')"
@@ -46,6 +48,8 @@
                 </li>
                 <li><a (click)="scrollToSection('about')" [ngClass]="{'active': activeSection === 'app-about'}">Sobre
                         Mí</a></li>
+                <li><a (click)="scrollToSection('services')"
+                        [ngClass]="{'active': activeSection === 'app-services'}">Servicios</a></li>
                 <li><a (click)="scrollToSection('portfolio')"
                         [ngClass]="{'active': activeSection === 'app-portfolio'}">Portfolio</a></li>
                 <li><a (click)="scrollToSection('contact')"

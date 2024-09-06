@@ -1,0 +1,19 @@
+<section class="services">
+    <h1 class="title">Servicios</h1>
+    <div class="content">
+        <div class="card" *ngFor="let card of cards; let i = index" (click)="expandCard(i)">
+            <div class="icon">
+                <img src="{{card.icon}}" alt="{{card.title}}" width="60px">
+            </div>
+            <h2 class="card-title">{{card.title}}</h2>
+            <p class="description">{{card.description}}</p>
+
+            <div class="expanded-content" [class.expanded]="card.expanded">
+                <p><strong>Descripción Detallada:</strong> {{card.detailedDescription}}</p>
+                <p><strong>Proyectos realizados:</strong> {{card.projects}}</p>
+                <p><strong>Precio promedio:</strong> {{card.price}}</p>
+                <p><strong>Duración típica:</strong> {{card.duration}}</p>
+            </div>
+        </div>
+    </div>
+</section>

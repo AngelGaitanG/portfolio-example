@@ -16,7 +16,7 @@ export class HeaderComponent {
   @ViewChild('menuBtn') menuBtn!: ElementRef;
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const sections = document.querySelectorAll('app-home, app-portfolio, app-about, app-contact');
+    const sections = document.querySelectorAll('app-home, app-portfolio, app-about, app-contact, app-services');
     let currentSection = '';
 
     sections.forEach((section) => {
@@ -33,7 +33,7 @@ export class HeaderComponent {
     const section = document.getElementById(sectionId);
     if (section) {
       const yOffset = -100;
-      const y = section.getBoundingClientRect().top + yOffset;
+      const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
       history.pushState(null, '', sectionId);
     }
