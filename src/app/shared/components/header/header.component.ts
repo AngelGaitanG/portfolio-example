@@ -32,8 +32,9 @@ export class HeaderComponent {
   scrollToSection(sectionId: string) {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-
+      const yOffset = -100;
+      const y = section.getBoundingClientRect().top + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
       history.pushState(null, '', sectionId);
     }
   }

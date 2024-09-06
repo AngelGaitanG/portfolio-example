@@ -1,4 +1,112 @@
 :host {
-    min-height: 100vh;
-    display: block;
+    display: flex;
+    min-height: calc(100vh - 70px);
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+section .title h1 {
+    color: var(--primary-color-contrast);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--primary-color-contrast);
+}
+
+section .content {
+    display: flex;
+    flex-direction: row;
+    gap: 0 10px
+}
+
+section .content .secondary-photo {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+section .content .secondary-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section .content .about {
+    /* width: 60%; */
+}
+
+section .content .about .motto p {
+    font-size: 25px;
+    color: var(--primary-color-contrast);
+    font-weight: 700;
+}
+
+section .content .about .description p {
+    margin-top: 20px;
+    color: var(--primary-color-contrast);
+}
+
+section .content .about .dashboard {
+    margin-top: 20px;
+    display: flex;
+    color: var(--primary-color-contrast);
+    gap: 0 30px;
+}
+
+section .content .about .dashboard .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .content .about .dashboard .card p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+section .content .about .dash-btns {
+    margin-top: 20px;
+    display: flex;
+    gap: 0 20px;
+}
+
+section .content .about .dash-btns button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section .content .about .dash-btns .hire-btn {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color-contrast);
+    transition: .3s ease;
+}
+
+section .content .about .dash-btns .hire-btn:hover {
+    background-color: var(--secondary-color-contrast);
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+section .content .about .dash-btns .cv-btn {
+    background-color: var(--secondary-color-contrast);
+    color: var(--primary-color);
+    transition: .3s ease;
+}
+
+section .content .about .dash-btns .cv-btn:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color-contrast);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 }
