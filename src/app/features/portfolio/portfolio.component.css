@@ -1,4 +1,125 @@
 :host {
-    display: block;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+.portfolio .title {
+    color: var(--primary-color-contrast);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-type-selector {
+    display: flex;
+    padding: 5px;
+    gap: 0 5px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+.project-type-selector-item {
+    position: relative;
+}
+
+.project-type-selector-item input[type="radio"] {
+    display: none;
+}
+
+.project-type-selector-item span {
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.project-type-selector-item input[type="radio"]:checked+span {
+    background-color: var(--secondary-color-dark);
+    border-color: var(--primary-color-light);
+    color: var(--primary-color-contrast);
+}
+
+
+.works {
+    width: 1100px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.works::-webkit-scrollbar {
+    height: 8px;
+
+}
+
+.works::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-contrast);
+    border-radius: 10px;
+}
+
+.app-work-card {
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+@media screen and (max-width: 1180px) {
+    .works {
+        width: 730px;
+    }
+}
+
+@media screen and (max-width: 815px) {
+
+    .portfolio {
+        padding: 0 20px;
+    }
+
+    .works {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .works {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+
+    .portfolio {
+        padding: 0 10px;
+    }
+
+    .works {
+        width: 300px;
+    }
 }

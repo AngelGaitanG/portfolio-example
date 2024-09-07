@@ -1,1 +1,26 @@
-<p>portfolio works!</p>
+<section class="portfolio">
+    <h1 class="title">Portfolio</h1>
+    <div class="portfolio-container">
+        <div class="project-type-selector">
+            <label class="project-type-selector-item">
+                <input type="radio" name="project-type" value="all" checked (change)="onTypeChange('all')">
+                <span>Todos</span>
+            </label>
+            <label class="project-type-selector-item">
+                <input type="radio" name="project-type" value="amarillos" (change)="onTypeChange('amarillos')">
+                <span>Proyectos Amarillos</span>
+            </label>
+            <label class="project-type-selector-item">
+                <input type="radio" name="project-type" value="verdes" (change)="onTypeChange('verdes')">
+                <span>Proyectos Verdes</span>
+            </label>
+            <label class="project-type-selector-item">
+                <input type="radio" name="project-type" value="rojos" (change)="onTypeChange('rojos')">
+                <span>Proyectos Rojos</span>
+            </label>
+        </div>
+        <div class="works">
+            <app-work-card *ngFor="let work of currentWorks" [card]="work"></app-work-card>
+        </div>
+    </div>
+</section>
