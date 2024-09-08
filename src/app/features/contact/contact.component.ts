@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Resend } from 'resend';
+const resend = new Resend('re_123456789');
 
 @Component({
   selector: 'app-contact',
@@ -8,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+
+
 
 }
