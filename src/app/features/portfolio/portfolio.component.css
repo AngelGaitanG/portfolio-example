@@ -108,6 +108,11 @@
 }
 
 @media screen and (max-width: 595px) {
+
+    .portfolio-container {
+        align-items: center;
+    }
+
     .works {
         width: 340px;
     }
